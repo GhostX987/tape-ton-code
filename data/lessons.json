@@ -1,0 +1,366 @@
+{
+  "lessons": [
+    {
+      "id": "html-01",
+      "track": "HTML",
+      "title": "Structure d’une page",
+      "level": 1,
+      "content": [
+        "Une page HTML a une structure de base.",
+        "head contient les infos (titre, liens CSS).",
+        "body contient le contenu visible."
+      ],
+      "example": "<!doctype html>\n<html lang=\"fr\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>Ma page</title>\n</head>\n<body>\n  <h1>Salut</h1>\n</body>\n</html>"
+    },
+    {
+      "id": "html-02",
+      "track": "HTML",
+      "title": "Titres et paragraphes",
+      "level": 1,
+      "content": [
+        "h1 à h6 servent pour les titres.",
+        "p sert pour un paragraphe.",
+        "Un bon HTML est structuré."
+      ],
+      "example": "<h1>Titre principal</h1>\n<p>Un paragraphe.</p>\n<h2>Sous-titre</h2>"
+    },
+    {
+      "id": "html-03",
+      "track": "HTML",
+      "title": "Liens (a)",
+      "level": 1,
+      "content": [
+        "a sert à créer un lien.",
+        "href contient l’adresse.",
+        "target=\"_blank\" ouvre dans un nouvel onglet."
+      ],
+      "example": "<a href=\"https://example.com\" target=\"_blank\">Aller sur Example</a>"
+    },
+    {
+      "id": "html-04",
+      "track": "HTML",
+      "title": "Images (img) et alt",
+      "level": 1,
+      "content": [
+        "img affiche une image.",
+        "src est le chemin.",
+        "alt est obligatoire pour l’accessibilité."
+      ],
+      "example": "<img src=\"chat.png\" alt=\"Un chat qui dort\">"
+    },
+    {
+      "id": "html-05",
+      "track": "HTML",
+      "title": "Listes (ul/ol/li)",
+      "level": 2,
+      "content": [
+        "ul = liste à puces.",
+        "ol = liste numérotée.",
+        "li = élément de liste."
+      ],
+      "example": "<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n  <li>JS</li>\n</ul>"
+    },
+    {
+      "id": "html-06",
+      "track": "HTML",
+      "title": "Div et section",
+      "level": 2,
+      "content": [
+        "div regroupe des éléments.",
+        "section est plus sémantique (mieux pour organiser).",
+        "On les stylise avec CSS."
+      ],
+      "example": "<section>\n  <h2>Chapitre</h2>\n  <p>Contenu…</p>\n</section>"
+    },
+    {
+      "id": "html-07",
+      "track": "HTML",
+      "title": "Balises sémantiques",
+      "level": 2,
+      "content": [
+        "header, nav, main, footer aident à structurer.",
+        "C’est meilleur pour l’accessibilité et le SEO.",
+        "Un site pro les utilise."
+      ],
+      "example": "<header>…</header>\n<nav>…</nav>\n<main>…</main>\n<footer>…</footer>"
+    },
+    {
+      "id": "html-08",
+      "track": "HTML",
+      "title": "Formulaire : input/label",
+      "level": 3,
+      "content": [
+        "label explique un champ.",
+        "input récupère une valeur.",
+        "name sert pour envoyer les données."
+      ],
+      "example": "<label for=\"pseudo\">Pseudo</label>\n<input id=\"pseudo\" name=\"pseudo\" type=\"text\">"
+    },
+    {
+      "id": "html-09",
+      "track": "HTML",
+      "title": "Bouton et attributs",
+      "level": 3,
+      "content": [
+        "button crée un bouton.",
+        "type=\"button\" évite d’envoyer un formulaire.",
+        "Les attributs donnent des infos aux éléments."
+      ],
+      "example": "<button type=\"button\">Clique</button>"
+    },
+    {
+      "id": "html-10",
+      "track": "HTML",
+      "title": "Classes et IDs",
+      "level": 3,
+      "content": [
+        "class sert à styler plusieurs éléments.",
+        "id est unique sur la page.",
+        "En JS, on cible souvent avec querySelector."
+      ],
+      "example": "<div class=\"card\">Carte</div>\n<div id=\"score\">0</div>"
+    },
+
+    {
+      "id": "css-01",
+      "track": "CSS",
+      "title": "Relier CSS et sélecteurs",
+      "level": 1,
+      "content": [
+        "Le CSS stylise le HTML.",
+        "p cible tous les paragraphes.",
+        ".classe cible une classe."
+      ],
+      "example": "p { font-size: 18px; }\n.card { border: 1px solid black; }"
+    },
+    {
+      "id": "css-02",
+      "track": "CSS",
+      "title": "Couleurs",
+      "level": 1,
+      "content": [
+        "color change la couleur du texte.",
+        "background-color change le fond.",
+        "Tu peux utiliser des noms ou du #hex."
+      ],
+      "example": "h1 { color: #ffffff; }\nbody { background-color: #0b1020; }"
+    },
+    {
+      "id": "css-03",
+      "track": "CSS",
+      "title": "Box model (margin/padding)",
+      "level": 2,
+      "content": [
+        "padding = espace à l’intérieur.",
+        "margin = espace à l’extérieur.",
+        "border = bordure."
+      ],
+      "example": ".card { padding: 16px; margin: 12px; border: 1px solid #333; }"
+    },
+    {
+      "id": "css-04",
+      "track": "CSS",
+      "title": "Largeur/hauteur",
+      "level": 2,
+      "content": [
+        "width/height définissent la taille.",
+        "max-width évite que ça devienne trop large.",
+        "Souvent utile pour les containers."
+      ],
+      "example": ".container { max-width: 1080px; width: 100%; }"
+    },
+    {
+      "id": "css-05",
+      "track": "CSS",
+      "title": "Display et inline/block",
+      "level": 2,
+      "content": [
+        "block prend toute la largeur.",
+        "inline prend juste la place nécessaire.",
+        "display change le comportement."
+      ],
+      "example": "a { display: inline-block; padding: 8px 10px; }"
+    },
+    {
+      "id": "css-06",
+      "track": "CSS",
+      "title": "Flexbox : aligner",
+      "level": 3,
+      "content": [
+        "display:flex aligne des éléments.",
+        "justify-content aligne horizontalement.",
+        "align-items aligne verticalement."
+      ],
+      "example": ".row { display: flex; justify-content: space-between; align-items: center; }"
+    },
+    {
+      "id": "css-07",
+      "track": "CSS",
+      "title": "Flexbox : gap et wrap",
+      "level": 3,
+      "content": [
+        "gap espace entre éléments.",
+        "flex-wrap permet de passer à la ligne.",
+        "Super utile en responsive."
+      ],
+      "example": ".nav { display:flex; gap:10px; flex-wrap: wrap; }"
+    },
+    {
+      "id": "css-08",
+      "track": "CSS",
+      "title": "Grid : bases",
+      "level": 4,
+      "content": [
+        "Grid sert pour des mises en page.",
+        "grid-template-columns définit les colonnes.",
+        "gap ajoute de l’espace."
+      ],
+      "example": ".grid { display:grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }"
+    },
+    {
+      "id": "css-09",
+      "track": "CSS",
+      "title": "Responsive : media queries",
+      "level": 4,
+      "content": [
+        "Le responsive adapte le site au mobile.",
+        "@media s’applique selon la taille.",
+        "Tu changes les tailles de texte/layout."
+      ],
+      "example": "@media (max-width: 720px) {\n  .h1 { font-size: 28px; }\n}"
+    },
+    {
+      "id": "css-10",
+      "track": "CSS",
+      "title": "Hover et transitions",
+      "level": 4,
+      "content": [
+        ":hover agit au survol.",
+        "transition rend le changement fluide.",
+        "Ça rend l’UI plus pro."
+      ],
+      "example": ".btn { transition: transform .15s ease; }\n.btn:hover { transform: translateY(-1px); }"
+    },
+
+    {
+      "id": "js-01",
+      "track": "JavaScript",
+      "title": "Variables",
+      "level": 1,
+      "content": [
+        "let crée une variable modifiable.",
+        "const crée une variable non modifiable.",
+        "Stocker une valeur aide à suivre un score."
+      ],
+      "example": "let score = 0;\nconst max = 10;"
+    },
+    {
+      "id": "js-02",
+      "track": "JavaScript",
+      "title": "Types simples",
+      "level": 1,
+      "content": [
+        "Nombre, texte, vrai/faux.",
+        "typeof te dit le type.",
+        "Comprendre les types évite des bugs."
+      ],
+      "example": "let age = 19;\nlet nom = \"Alex\";\nlet ok = true;\nconsole.log(typeof age);"
+    },
+    {
+      "id": "js-03",
+      "track": "JavaScript",
+      "title": "Conditions (if)",
+      "level": 2,
+      "content": [
+        "if exécute un bloc si la condition est vraie.",
+        "=== compare valeur + type.",
+        "else gère le cas contraire."
+      ],
+      "example": "let score = 20;\nif (score === 20) {\n  console.log(\"Bravo\");\n} else {\n  console.log(\"Continue\");\n}"
+    },
+    {
+      "id": "js-04",
+      "track": "JavaScript",
+      "title": "Boucles (for)",
+      "level": 3,
+      "content": [
+        "Une boucle répète du code.",
+        "for est pratique quand tu sais combien de fois.",
+        "Utile pour parcourir un tableau."
+      ],
+      "example": "for (let i = 1; i <= 3; i++) {\n  console.log(i);\n}"
+    },
+    {
+      "id": "js-05",
+      "track": "JavaScript",
+      "title": "Fonctions",
+      "level": 2,
+      "content": [
+        "Une fonction est une action réutilisable.",
+        "On l’appelle quand on en a besoin.",
+        "Les paramètres passent des infos."
+      ],
+      "example": "function add(a, b) {\n  return a + b;\n}\nconsole.log(add(2, 3));"
+    },
+    {
+      "id": "js-06",
+      "track": "JavaScript",
+      "title": "Tableaux",
+      "level": 3,
+      "content": [
+        "Un tableau stocke plusieurs valeurs.",
+        "index commence à 0.",
+        "push ajoute un élément."
+      ],
+      "example": "let notes = [10, 12, 18];\nnotes.push(20);\nconsole.log(notes[0]);"
+    },
+    {
+      "id": "js-07",
+      "track": "JavaScript",
+      "title": "Objets",
+      "level": 3,
+      "content": [
+        "Un objet stocke des infos liées.",
+        "clé: valeur.",
+        "Très utile pour modéliser un joueur."
+      ],
+      "example": "let joueur = { nom: \"Sam\", xp: 0 };\njoueur.xp += 10;"
+    },
+    {
+      "id": "js-08",
+      "track": "JavaScript",
+      "title": "DOM : sélectionner",
+      "level": 4,
+      "content": [
+        "Le DOM = la page HTML manipulable.",
+        "querySelector cible un élément.",
+        "Tu peux lire/modifier son texte."
+      ],
+      "example": "const el = document.querySelector('#score');\nel.textContent = \"10\";"
+    },
+    {
+      "id": "js-09",
+      "track": "JavaScript",
+      "title": "Événements (click)",
+      "level": 4,
+      "content": [
+        "Un événement déclenche du code.",
+        "addEventListener écoute un événement.",
+        "Indispensable pour les jeux."
+      ],
+      "example": "const btn = document.querySelector('button');\nbtn.addEventListener('click', () => {\n  console.log('clic');\n});"
+    },
+    {
+      "id": "js-10",
+      "track": "JavaScript",
+      "title": "try/catch (gérer erreurs)",
+      "level": 5,
+      "content": [
+        "try exécute du code.",
+        "catch attrape l’erreur sans casser l’app.",
+        "Très utile dans un site d’exercices."
+      ],
+      "example": "try {\n  JSON.parse(\"{\");\n} catch (e) {\n  console.log(\"Erreur:\", e.message);\n}"
+    }
+  ]
+}

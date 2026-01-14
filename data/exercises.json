@@ -1,0 +1,53 @@
+{
+  "exercises": [
+    {
+      "id": "quiz-js-01",
+      "type": "quiz",
+      "track": "JavaScript",
+      "title": "Condition simple",
+      "prompt": "Que se passe-t-il si score vaut 10 ?",
+      "snippet": "let score = 10;\nif (score === 10) {\n  console.log('Bravo');\n}",
+      "choices": ["Il affiche Bravo", "Il n'affiche rien", "Il affiche 10"],
+      "answerIndex": 0,
+      "explain": "La condition score === 10 est vraie, donc 'Bravo' est affiché."
+    },
+    {
+      "id": "fill-js-01",
+      "type": "fill",
+      "track": "JavaScript",
+      "title": "Compléter une ligne",
+      "prompt": "Complète pour que \"Bravo\" s'affiche quand score vaut 20.",
+      "snippet": "let score = 20;\nif (score ___ 20) {\n  console.log('Bravo');\n}",
+      "blanks": ["==="],
+      "explain": "=== compare valeur et type."
+    },
+    {
+      "id": "order-html-01",
+      "type": "order",
+      "track": "HTML",
+      "title": "Remettre la structure dans l’ordre",
+      "prompt": "Remets ces lignes dans le bon ordre (structure HTML minimale).",
+      "lines": [
+        "<body>",
+        "</html>",
+        "<!doctype html>",
+        "<html lang=\"fr\">",
+        "<head></head>",
+        "</body>"
+      ],
+      "answerOrder": [2, 3, 4, 0, 5, 1],
+      "explain": "doctype, html, head, body, puis les fermetures."
+    },
+    {
+      "id": "bugfix-css-01",
+      "type": "bugfix",
+      "track": "CSS",
+      "title": "Bug CSS : propriété mal écrite",
+      "prompt": "Corrige le bug : le fond ne change pas.",
+      "snippet": "body {\n  background-colour: #0b1020;\n  color: white;\n}",
+      "mustInclude": ["background-color"],
+      "mustNotInclude": ["background-colour"],
+      "explain": "En CSS, c'est background-color (américain), pas colour."
+    }
+  ]
+}
